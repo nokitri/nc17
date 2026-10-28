@@ -1,0 +1,13 @@
+[project]
+name = "nc17-ableton"
+version = "0.1.0"
+description = "MCP server connecting Claude Code and Codex to an open Ableton Live 12 set"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2,<3"]
+
+[project.scripts]
+nc17-ableton = "nc17_ableton.server:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
